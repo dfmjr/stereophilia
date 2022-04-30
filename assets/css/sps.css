@@ -1,10 +1,6 @@
 /*
-Template Name: Me
-Author: One Page Love
-Author URI: https://onepagelove.com
-Template URI: https://onepagelove.com/me
-Description: Me is a slick, personal layout for any individual wanting a minimal online presence. Features include a big background image, logo, bio and icons.
-Version: 0.2.2
+Template Name: Stereophilia.studio
+Author: Stereophilia.studio
 */
 /* -- CSS Reset -- */
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
@@ -132,8 +128,9 @@ body.page-template-page-fullsingle-sps {
   line-height: 60px;
   letter-spacing: -0.5px;
   color: #c4c4c4;
-  background-image: url("../../images/background.jpg");
-  background-position: center center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.52)), to(rgba(117, 19, 93, 0.73))), url("../../images/background.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(117, 19, 93, 0.73)), url("../../images/background.jpg");
+  background-position: center bottom;
   background-size: cover;
 }
 
@@ -147,6 +144,20 @@ body.page-template-page-fullsingle-sps p {
     font-size: 32px;
     line-height: 40px;
   }
+}
+
+body.page-template-page-fullsingle-sps .sr-only {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal;
 }
 
 .fs-sps {
@@ -181,25 +192,25 @@ body.page-template-page-fullsingle-sps p {
 }
 
 .top {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  justify-items: center;
+}
+
+@media (min-width: 800px) {
+  .top {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    justify-items: start;
+  }
 }
 
 .logo {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,9 +239,6 @@ body.page-template-page-fullsingle-sps p {
 }
 
 .bio {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -268,9 +276,6 @@ body.page-template-page-fullsingle-sps p {
 }
 
 .links {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,11 +283,6 @@ body.page-template-page-fullsingle-sps p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-animation: fadein 6s;
-          animation: fadein 6s;
-}
-
-.links ul {
   -webkit-animation: fadein 6s;
           animation: fadein 6s;
 }
@@ -326,6 +326,11 @@ body.page-template-page-fullsingle-sps p {
   fill: #ffffff;
   -webkit-transition: 0.1s;
   transition: 0.1s;
+}
+
+.subscribe {
+  -webkit-animation: fadein 3s;
+          animation: fadein 3s;
 }
 
 .subscribe .input-field {
@@ -384,19 +389,41 @@ body.page-template-page-fullsingle-sps p {
 }
 
 .subscribe .submit-button {
-  font-size: 18px;
-  border-width: 1px;
   padding: 1rem;
   font-weight: bold;
-  min-height: 60px;
-  background-color: #ffffff;
-  border-color: #ffffff;
+  font-size: 18px;
 }
 
-.subscribe .submit-button:hover {
-  background-color: #222;
-  color: #c4c4c4;
-  border-color: #222;
+@media (min-width: 800px) {
+  .subscribe .submit-button {
+    border-width: 1px;
+    min-height: 60px;
+    background-color: #ffffff;
+    border-color: #ffffff;
+  }
+  .subscribe .submit-button:hover {
+    background-color: #222;
+    color: #c4c4c4;
+    border-color: #222;
+  }
+}
+
+.subscribe p {
+  font-size: 24px !important;
+}
+
+.subscribe p a {
+  color: #ffffff;
+  -webkit-transition: 1s;
+  transition: 1s;
+  background: rgba(241, 231, 135, 0.6);
+}
+
+.subscribe p a:hover {
+  color: #000;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .credit {
@@ -475,4 +502,4 @@ body.page-template-page-fullsingle-sps.sps-video .video-container embed {
 body.page-template-page-fullsingle-sps.sps-video .fs-sps {
   background-color: rgba(0, 0, 0, 0.6);
 }
-/*# sourceMappingURL=me.css.map */
+/*# sourceMappingURL=sps.css.map */
