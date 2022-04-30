@@ -200,6 +200,7 @@ body.page-template-page-fullsingle-sps .sr-only {
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
+  margin-bottom: 2rem;
 }
 
 @media (min-width: 800px) {
