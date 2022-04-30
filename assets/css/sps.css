@@ -394,6 +394,7 @@ body.page-template-page-fullsingle-sps .sr-only {
   font-weight: bold;
   font-size: 18px;
   color: #141414;
+  background-color: #ffffff;
 }
 
 @media (min-width: 800px) {
