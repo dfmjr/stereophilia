@@ -134,6 +134,20 @@ body.page-template-page-fullsingle-sps {
   background-size: cover;
 }
 
+body.page-template-page-fullsingle-sps h1 {
+  margin: 1.4rem auto;
+  font-size: 2.8rem;
+  -webkit-animation: fadein 2.6s;
+          animation: fadein 2.6s;
+}
+
+@media (min-width: 800px) {
+  body.page-template-page-fullsingle-sps h1 {
+    margin: 2.4rem auto;
+    font-size: 3.8rem;
+  }
+}
+
 body.page-template-page-fullsingle-sps p {
   margin-bottom: 28px;
   color: #c4c4c4;
@@ -214,8 +228,6 @@ body.page-template-page-fullsingle-sps .sr-only {
 
 @media (min-width: 800px) {
   .top {
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
     width: 100%;
   }
 }
@@ -248,49 +260,51 @@ body.page-template-page-fullsingle-sps .sr-only {
   opacity: 0.8;
 }
 
-.bio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.podcast {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-animation: fadein 4s;
           animation: fadein 4s;
   letter-spacing: -1px;
-  max-width: 75%;
   gap: 2rem;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: flex-start;
+          align-items: start;
+  text-align: center;
+  justify-items: center;
 }
 
-@media (max-width: 800px) {
-  .bio {
-    max-width: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+@media (min-width: 800px) {
+  .podcast {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    max-width: 75%;
+    text-align: initial;
+    justify-items: start;
   }
 }
 
-.bio img {
+.podcast .podcast {
   max-width: 125px;
   max-height: 125px;
 }
 
-.bio a {
+.podcast a.hightlight {
   color: #ffffff;
   -webkit-transition: 1s;
   transition: 1s;
   background: rgba(241, 231, 135, 0.6);
 }
 
-.bio a:hover {
+.podcast a.hightlight:hover {
   color: #000;
   -webkit-transition: 0.1s;
   transition: 0.1s;
