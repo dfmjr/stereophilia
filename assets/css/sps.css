@@ -120,7 +120,7 @@ html {
 }
 
 body.page-template-page-fullsingle-sps {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #141414;
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
