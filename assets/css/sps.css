@@ -136,15 +136,17 @@ body.page-template-page-fullsingle-sps {
 
 body.page-template-page-fullsingle-sps h1 {
   margin: 1.4rem auto;
-  font-size: 2.8rem;
   -webkit-animation: fadein 2.6s;
           animation: fadein 2.6s;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
 }
 
 @media (min-width: 800px) {
   body.page-template-page-fullsingle-sps h1 {
     margin: 2.4rem auto;
-    font-size: 3.8rem;
   }
 }
 
