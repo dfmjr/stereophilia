@@ -1,0 +1,23 @@
+#top-logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#top-logos #stereologo {
+    max-width: 200px;
+    margin-bottom: 2rem;
+}
+
+#top-logos #nextfavbandlogo {
+    max-width: 250px;
+    margin-bottom: 2rem;
+}
+
+/*** 
+    Headers type
+    */
+    h2 small {
+        font-size: 50%;
+        font-family: 'Merriweather';
+    }
