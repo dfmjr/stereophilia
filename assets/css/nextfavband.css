@@ -7,7 +7,7 @@
     max-width: 70%;
     margin-bottom: 2rem;
   }
-@media screen (min-width:768px) {
+  @media screen and (min-width: 768px) {
     #top-logos #stereologo {
         max-width: 400px;
       }
