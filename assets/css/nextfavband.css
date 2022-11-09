@@ -1,33 +1,54 @@
 #top-logos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #top-logos #stereologo {
-    max-width: 200px;
-    margin-bottom: 2rem;
+  max-width: 200px;
+  margin-bottom: 2rem;
 }
 
 #top-logos #nextfavbandlogo {
-    max-width: 250px;
-    margin-bottom: 2rem;
-
+  max-width: 250px;
+  margin-bottom: 2rem;
 }
 
 table tbody tr:nth-child(2n + 1) {
-    background-color: rgba(252,210,153, 0.5);
+  background-color: rgba(252, 210, 153, 0.5);
 }
 
 .box {
-    background-color: rgba(252,210,153, 0.5);
-    border-color: rgba(252,210,153, 1);
+  background-color: rgba(252, 210, 153, 0.5);
+  border-color: rgba(252, 210, 153, 1);
 }
 /*** 
     Headers type
     */
-    h2 small {
-        font-size: 50%;
-        font-family: 'Merriweather';
-        display: block;
-    }
+h2 small {
+  font-size: 50%;
+  font-family: "Merriweather";
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  #featured-show {
+    display: grid;
+    grid-template-columns: 25% auto;
+    gap: 2rem;
+  }
+}
+
+#featured-show img {
+  width: 100%;
+}
+
+.stereophilia #intro p {
+  font-style: normal;
+  line-height: 1.8;
+}
+@media screen and (min-width: 768px) {
+  .stereophilia #intro p {
+    max-width: 75%;
+  }
+}
