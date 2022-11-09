@@ -3,11 +3,16 @@
   flex-direction: column;
   align-items: center;
 }
-
 #top-logos #stereologo {
-  max-width: 200px;
-  margin-bottom: 2rem;
+    max-width: 70%;
+    margin-bottom: 2rem;
+  }
+@media screen (min-width:768px) {
+    #top-logos #stereologo {
+        max-width: 400px;
+      }
 }
+
 
 #top-logos #nextfavbandlogo {
   max-width: 250px;
@@ -41,6 +46,7 @@ h2 small {
 
 #featured-show img {
   width: 100%;
+  max-width: 80%;
 }
 
 .stereophilia #intro p {
