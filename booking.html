@@ -86,19 +86,23 @@
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
 									<h3>Get in touch!</h3>
-									<form method="post" name="contact" data-netlify="true">
+									<form method="post" name="booking" data-netlify="true">
 										<div class="fields">
 											<div class="field">
 												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
+												<input type="text" name="name" id="name" required/>
+											</div>
+											<div class="field">
+												<label for="company">Company/Organization</label>
+												<input type="text" name="company" id="company" required/>
 											</div>
 											<div class="field">
 												<label for="email">Email</label>
-												<input type="email" name="email" id="email" />
+												<input type="email" name="email" id="email" required/>
 											</div>
 											<div class="field">
 												<label for="event">Event Type</label>
-												<select name="event" id="event">
+												<select name="event" id="event" required>
 													<option value="" disabled selected hidden>Choose an option</option>
 													<option value="Party">Party</option>
 													<option value="Fundraiser">Fundraiser</option>
